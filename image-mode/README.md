@@ -20,7 +20,9 @@ Expect less than 10min of total prep (build time included).
 
 Click **Launch** on the bottom right, expect 3min of provisioning.
 
-Click **Start** on the bottom right whan available.
+Click **Start** on the bottom right when it appears.
+
+### Step 2
 
 Paste the following commands all at once in **Terminal** tab
 
@@ -51,7 +53,7 @@ virt-install --name bootc \
 virsh start bootc
 ```
 
-### Step 2
+### Step 3
 
 Advance to *exercise 2* screen to access the **VM Console** tab.
 
