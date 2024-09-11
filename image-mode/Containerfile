@@ -1,5 +1,4 @@
 FROM registry.redhat.io/rhel9/rhel-bootc
 RUN dnf install -y httpd
 RUN systemctl enable httpd
-RUN echo "Bootc FTW !" > /var/www/html/index.html
 EXPOSE 80
