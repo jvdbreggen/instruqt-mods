@@ -17,7 +17,7 @@ Follow these instructions to fast forward to using the bootc VM and skip the lon
 
 Expect less than 10min of total prep (mostly build time).
 
-<details>
+<details open>
         
 ### Step 1
 
