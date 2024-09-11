@@ -64,7 +64,9 @@ At this point you have a working bootc VM and you may modify the bootc image as 
 - Use the **Containerfile** tab to edit the image file
 - Use the **VM Console** tab for bootc commands
 
-### Feature : Bootc merges local configuration
+Demo scenarii are offered below to showcase bootc features and value
+
+### 1. Bootc merges local configuration
 
 Add a local change
 ```
