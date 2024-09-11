@@ -76,7 +76,7 @@ Tab **VM Console** : Make a local change and show it
 echo "Bootc FTW !" > /var/www/html/index.html
 curl localhost
 ```
-Tab **Containerfile** : Add the moon-buggy package
+Tab **Containerfile** : Add the moon-buggy package (copy and paste everything)
 ```text
 FROM registry.redhat.io/rhel9/rhel-bootc
 
