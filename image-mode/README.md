@@ -6,31 +6,29 @@ Access the lab at [red.ht/im-rhel](red.ht/im-rhel)
 
 This lab provides:
 - A workstation with terminal access
-- A registry to push/pull images
+- A registry to host images
 - A bootc VM
+- 60min of runtime
 
 ## Preparation
 
-Follow these instructions to fast forward to using the bootc VM and skip the long build time.
+Follow these instructions to fast forward to using the bootc VM and skip the long build time during your demo.
 
-Expect less than 10min of total prep
+Expect less than 10min of total prep (build time included).
 
 ### Step 1
 
-Launch the track, expect 3min of provisioning.
+Click **Launch** on the bottom right, expect 3min of provisioning.
 
 Click **Start** on the bottom right whan available.
 
 Paste the following commands in **Terminal** tab
 
-This will build and push the bootc image
+This will build and push the bootc image, then build and run the bootc VM (~5min)
 ```
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc .
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
-```
 
-This will build and run the bootc VM
-```
 podman run --rm --privileged \
         --volume .:/output \
          --volume ./config.json:/config.json \
