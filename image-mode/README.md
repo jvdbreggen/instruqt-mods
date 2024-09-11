@@ -1,7 +1,7 @@
 #Image Mode Basics
 
 ## Instruqt Track
-red.ht/im-rhel
+[red.ht/im-rhel]
 
 ## Preparation
 ### Step 1 : Paste the following commands in *exercise 1*
