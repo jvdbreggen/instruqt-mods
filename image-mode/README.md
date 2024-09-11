@@ -126,5 +126,9 @@ Tab **VM Console** : Show the available rollback
 sudo -i
 bootc status
 ```
-
+Tab **VM Console** : Activate the rollback and reboot
+```
+bootc rollback
+reboot
+```
 ### 3. Bootc lets you switch to a different image
