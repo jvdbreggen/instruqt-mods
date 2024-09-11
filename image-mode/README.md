@@ -105,7 +105,7 @@ curl localhost
 ```
 Tab **VM Console** : Show the movie
 ```
-telnet towel.blinkenlights.nl
+sleep 90 && pkill telnet & telnet towel.blinkenlights.nl
 ```
 Tab **Terminal** : Reboot the VM if you cannot exit the movie
 ```
@@ -113,5 +113,11 @@ virsh reboot bootc
 ```
 
 ### 2. Bootc provides rollback capability
+
+Tab **VM Console** : Show the available rollback
+```
+sudo -i
+bootc status
+```
 
 ### 3. Bootc lets you switch to a different image
