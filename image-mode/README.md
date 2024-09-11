@@ -131,4 +131,10 @@ Tab **VM Console** : Activate the rollback and reboot
 bootc rollback
 reboot
 ```
+Tab **VM Console** : Show that telnet is missing again
+```
+rpm -q telnet
+curl localhost
+```
+
 ### 3. Bootc lets you switch to a different image
