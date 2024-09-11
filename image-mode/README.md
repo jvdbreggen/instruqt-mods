@@ -58,6 +58,8 @@ virsh start bootc
 - Click **Check** then **Start** to advance to *exercise 2* screen, you should now see the **VM Console** tab.
 - Click **Check** then **Start** to advance to *exercise 3* screen, you should now see both the **Containerfile** and **VM Console** tabs.
 
+It's ready !
+
 ## Demo
 
 Close the instruction pane on the right with the **>** icon on top.
