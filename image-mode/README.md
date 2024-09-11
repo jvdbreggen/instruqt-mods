@@ -103,11 +103,14 @@ Tab **VM Console** : Show that the local change was retained
 ```bash
 curl localhost
 ```
-Tab **VM Console** : Show the movie then refresh the **VM Console** tab to exit
+Tab **VM Console** : Show the movie
 ```
 telnet towel.blinkenlights.nl
 ```
-
+Tab **Terminal** : Reboot the VM if you cannot exit the movie
+```
+virsh reboot bootc
+```
 
 ### 2. Bootc provides rollback capability
 
