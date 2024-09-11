@@ -63,3 +63,21 @@ At this point you have a working bootc VM and you may modify the bootc image as 
 - Use the **Terminal** tab to build and push the image
 - Use the **Containerfile** tab to edit the image file
 - Use the **VM Console** tab for bootc commands
+
+### Feature : Bootc merges local configuration
+
+Add a local change
+```
+echo "Bootc FTW !" > /var/www/html/index.html
+curl localhost
+```
+Update the bootc image and push it, then apply it to the VM
+```
+bootc upgrade
+reboot
+```
+Show that the configuration is retained
+```
+curl localhost
+```
+
