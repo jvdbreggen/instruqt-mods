@@ -22,7 +22,7 @@ Click **Launch** on the bottom right, expect 3min of provisioning.
 
 Click **Start** on the bottom right whan available.
 
-Paste the following commands in **Terminal** tab
+Paste the following commands all at once in **Terminal** tab
 
 This will build and push the bootc image, then build and run the bootc VM (~5min)
 ```
