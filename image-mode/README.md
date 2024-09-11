@@ -99,11 +99,11 @@ Tab **VM Console** : Apply the update to the bootc VM
 bootc upgrade
 reboot
 ```
-Show that the local change was retained
+Tab **VM Console** : Show that the local change was retained
 ```bash
 curl localhost
 ```
-Show the movie then refresh the **Terminal** tab to exit
+Tab **VM Console** : Show the movie then refresh the **Terminal** tab to exit
 ```
 telnet towel.blinkenlights.nl
 ```
