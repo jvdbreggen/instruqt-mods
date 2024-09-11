@@ -19,11 +19,13 @@ Expect less than 10min of total prep
 
 Paste the following commands in *exercise 1* screen
 
+This will build and push the bootc image
 ```
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc .
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 ```
 
+This will build and run the bootc VM
 ```
 podman run --rm --privileged \
         --volume .:/output \
