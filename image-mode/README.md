@@ -76,13 +76,13 @@ Tab **VM Console** : Make a local change and show it
 echo "Bootc FTW !" > /var/www/html/index.html
 curl localhost
 ```
-Tab **Containerfile** : Add the moon-buggy package (copy and paste everything)
+Tab **Containerfile** : Add the telnet package (or copy and paste everything)
 ```text
 FROM registry.redhat.io/rhel9/rhel-bootc
 
 ADD etc /etc
 
-RUN dnf install -y httpd moon-buggy
+RUN dnf install -y httpd telnet
 RUN systemctl enable httpd
 ```
 Tab **Terminal** : Update the bootc image and push it to registry
@@ -99,10 +99,11 @@ Show that the local change was retained
 ```bash
 curl localhost
 ```
-Show that you can play with moon-buggy
+Show the movie then refresh the **Terminal** tab to exit
+```
+telnet towel.blinkenlights.nl
 ```
 
-```
 
 ### 2. Bootc provides rollback capability
 
