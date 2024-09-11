@@ -17,7 +17,11 @@ Expect less than 10min of total prep
 
 ### Step 1
 
-Paste the following commands in *exercise 1* screen
+Launch the track, expect 3min of provisioning.
+
+Click **Start** on the bottom right whan available.
+
+Paste the following commands in **Terminal** tab
 
 This will build and push the bootc image
 ```
@@ -58,6 +62,7 @@ Advance to *exercise 3* screen to have both extra tabs : **Containerfile** and *
 ## Demo
 
 Close the instruction pane on the right with the **>** icon on top.
+
 At this point you have a working bootc VM and you may modify the bootc image as you please.
 
 - Use the **Terminal** tab to build and push the image
