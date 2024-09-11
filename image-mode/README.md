@@ -25,7 +25,7 @@ Expect less than 10min of total prep (build time included).
 
 This will build and push the bootc image, then build and run the bootc VM (~5min).
 
-Paste the following commands all at once in **Terminal** tab
+- Paste the following commands all at once in **Terminal** tab
 ```
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc .
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
