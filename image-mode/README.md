@@ -65,7 +65,7 @@ It's ready !
 
 ## Demo
 
-Close the instruction pane on the right with the **>** icon on top.
+Now close the instruction pane on the right with the **>** icon on top.
 
 At this point you have a working bootc VM and you may modify the bootc image as you please.
 
