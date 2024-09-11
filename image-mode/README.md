@@ -68,7 +68,7 @@ At this point you have a working bootc VM and you may modify the bootc image as 
 
 - Use the **Terminal** tab to build and push the image
 - Use the **Containerfile** tab to edit the image file
-- Use the **VM Console** tab for bootc commands
+- Use the **VM Console** tab for bootc commands - Credentials : core/redhat
 
 Demo scenarii are offered below to showcase bootc features and value, but you can design your own.
 
