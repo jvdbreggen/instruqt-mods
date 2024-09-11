@@ -88,3 +88,6 @@ Show that the configuration is retained
 curl localhost
 ```
 
+### 2. Bootc provides rollback capability
+
+### 3. Bootc lets you switch to a different image
