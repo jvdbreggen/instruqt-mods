@@ -9,6 +9,8 @@ This lab provides:
 - A registry to push/pull images
 - A bootc VM
 
+Follow these instructions to fast forward to using the bootc VM and skip the long build time.
+
 ## Preparation
 
 Expect 10min of total prep
