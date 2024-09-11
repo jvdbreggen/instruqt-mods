@@ -4,7 +4,11 @@
 [red.ht/im-rhel](red.ht/im-rhel)
 
 ## Preparation
-### Step 1 : Paste the following commands in *exercise 1*
+
+Expect 10min of total prep
+
+### Step 1
+Paste the following commands in *exercise 1*
 
 ```
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc .
@@ -34,6 +38,7 @@ virt-install --name bootc \
 virsh start bootc
 ```
 
-### Step 2 : Advance to *exercise 2* to access the *VM Console* tab
+### Step 2
+Advance to *exercise 2* to access the *VM Console* tab
 
 ## Demo
