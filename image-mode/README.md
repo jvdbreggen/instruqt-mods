@@ -103,7 +103,7 @@ Tab **VM Console** : Show that the local change was retained
 ```bash
 curl localhost
 ```
-Tab **VM Console** : Show the movie then refresh the **Terminal** tab to exit
+Tab **VM Console** : Show the movie then refresh the **VM Console** tab to exit
 ```
 telnet towel.blinkenlights.nl
 ```
