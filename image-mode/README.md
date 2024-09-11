@@ -15,7 +15,7 @@ Time limit : 60min
 
 Follow these instructions to fast forward to using the bootc VM and skip the long build time during your demo.
 
-Expect less than 10min of total prep (build time included).
+Expect less than 10min of total prep (mostly build time).
 
 ### Step 1
 
@@ -24,7 +24,7 @@ Expect less than 10min of total prep (build time included).
 
 ### Step 2
 
-This will build and push the bootc image, then build and run the bootc VM (~5min).
+This will build and push the bootc image, then build and run the bootc VM (~6min).
 
 - Paste the following commands all at once in **Terminal** tab
 ```
