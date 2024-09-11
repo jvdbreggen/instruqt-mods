@@ -72,22 +72,31 @@ Demo scenarii are offered below to showcase bootc features and value, but you ca
 ### 1. Bootc merges local configuration
 
 Tab **VM Console** : Make a local change and show it
-```
+```bash
 echo "Bootc FTW !" > /var/www/html/index.html
 curl localhost
 ```
-Tab **Terminal** : Update the bootc image and push it to registry
+Tab **Containerfile** : Add packages
+```text
+FROM registry.redhat.io/rhel9/rhel-bootc
+
+ADD etc /etc
+
+RUN dnf install -y httpd vim
+RUN systemctl enable httpd
 ```
+Tab **Terminal** : Update the bootc image and push it to registry
+```bash
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc -f Containerfile
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 ```
 Tab **VM Console** : Apply the update to the bootc VM
-```
+```bash
 bootc upgrade
 reboot
 ```
 Show that the local change was retained
-```
+```bash
 curl localhost
 ```
 
