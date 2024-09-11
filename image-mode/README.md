@@ -55,9 +55,8 @@ virsh start bootc
 
 ### Step 3
 
-Advance to *exercise 2* screen to access the **VM Console** tab.
-
-Advance to *exercise 3* screen to have both extra tabs : **Containerfile** and **VM Console**
+- Click **Check** to advance to *exercise 2* screen, you should now see the **VM Console** tab.
+- Click **Check** to advance to *exercise 3* screen, you should now see both the **Containerfile** and **VM Console** tabs.
 
 ## Demo
 
@@ -69,16 +68,20 @@ At this point you have a working bootc VM and you may modify the bootc image as 
 - Use the **Containerfile** tab to edit the image file
 - Use the **VM Console** tab for bootc commands
 
-Demo scenarii are offered below to showcase bootc features and value
+Demo scenarii are offered below to showcase bootc features and value, but you can design your own.
 
 ### 1. Bootc merges local configuration
 
-Add a local change
+Tab **VM Console** : Make a local change and show it
 ```
 echo "Bootc FTW !" > /var/www/html/index.html
 curl localhost
 ```
-Update the bootc image and push it, then apply it to the VM
+Tab **Terminal** : Update the bootc image and push it to registry
+```
+
+```
+Tab **VM Console** : Apply the update to the bootc VM
 ```
 bootc upgrade
 reboot
