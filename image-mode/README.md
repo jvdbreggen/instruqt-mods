@@ -78,7 +78,7 @@ Demo scenarii are offered below to showcase bootc features and value, but you ca
 
 ### 1. Bootc merges local configuration
 
-<details>
+<details open>
         
 Tab **Containerfile** : Add the telnet package (or copy and paste everything)
 ```text
