@@ -27,7 +27,7 @@ This will build and push the bootc image, then build and run the bootc VM (~5min
 
 - Paste the following commands all at once in **Terminal** tab
 ```
-podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc .
+podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc -f Containerfile
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 
 podman run --rm --privileged \
@@ -78,14 +78,15 @@ curl localhost
 ```
 Tab **Terminal** : Update the bootc image and push it to registry
 ```
-
+podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc -f Containerfile
+podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 ```
 Tab **VM Console** : Apply the update to the bootc VM
 ```
 bootc upgrade
 reboot
 ```
-Show that the configuration is retained
+Show that the local change was retained
 ```
 curl localhost
 ```
