@@ -97,7 +97,7 @@ podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 Tab **VM Console** : Make a local change and show it
 ```bash
 sudo -i
-echo "Bootc FTW !" > /var/www/html/index.html
+echo "☆ Bootc is awesome ! ☆" > /var/www/html/index.html
 curl localhost
 ```
 Tab **VM Console** : Apply the update to the bootc VM
