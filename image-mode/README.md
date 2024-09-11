@@ -76,13 +76,13 @@ Tab **VM Console** : Make a local change and show it
 echo "Bootc FTW !" > /var/www/html/index.html
 curl localhost
 ```
-Tab **Containerfile** : Add packages
+Tab **Containerfile** : Add the moon-buggy package
 ```text
 FROM registry.redhat.io/rhel9/rhel-bootc
 
 ADD etc /etc
 
-RUN dnf install -y httpd vim
+RUN dnf install -y httpd moon-buggy
 RUN systemctl enable httpd
 ```
 Tab **Terminal** : Update the bootc image and push it to registry
@@ -98,6 +98,10 @@ reboot
 Show that the local change was retained
 ```bash
 curl localhost
+```
+Show that you can play with moon-buggy
+```
+
 ```
 
 ### 2. Bootc provides rollback capability
