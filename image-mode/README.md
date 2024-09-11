@@ -17,6 +17,7 @@ Follow these instructions to fast forward to using the bootc VM and skip the lon
 
 Expect less than 10min of total prep (mostly build time).
 
+<details>
 ### Step 1
 
 - Click **Launch** on the bottom right, expect 3min of provisioning.
@@ -60,6 +61,8 @@ virsh start bootc
 
 It's ready !
 
+</details>
+
 ## Demo
 
 Close the instruction pane on the right with the **>** icon on top.
@@ -74,6 +77,8 @@ Demo scenarii are offered below to showcase bootc features and value, but you ca
 
 ### 1. Bootc merges local configuration
 
+<details>
+        
 Tab **Containerfile** : Add the telnet package (or copy and paste everything)
 ```text
 FROM registry.redhat.io/rhel9/rhel-bootc
@@ -111,6 +116,7 @@ Tab **Terminal** : Reboot the VM if you cannot exit the movie
 ```
 virsh reboot bootc
 ```
+</details>
 
 ### 2. Bootc provides rollback capability
 
