@@ -74,12 +74,6 @@ Demo scenarii are offered below to showcase bootc features and value, but you ca
 
 ### 1. Bootc merges local configuration
 
-Tab **VM Console** : Make a local change and show it
-```bash
-sudo -i
-echo "Bootc FTW !" > /var/www/html/index.html
-curl localhost
-```
 Tab **Containerfile** : Add the telnet package (or copy and paste everything)
 ```text
 FROM registry.redhat.io/rhel9/rhel-bootc
@@ -94,9 +88,14 @@ Tab **Terminal** : Update the bootc image and push it to registry
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc -f Containerfile
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 ```
-Tab **VM Console** : Apply the update to the bootc VM
+Tab **VM Console** : Make a local change and show it
 ```bash
 sudo -i
+echo "Bootc FTW !" > /var/www/html/index.html
+curl localhost
+```
+Tab **VM Console** : Apply the update to the bootc VM
+```bash
 bootc upgrade
 reboot
 ```
