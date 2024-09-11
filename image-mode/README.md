@@ -2,6 +2,7 @@
 
 ## Instruqt Track
 Access the lab at [red.ht/im-rhel](red.ht/im-rhel)
+
 This lab provides:
 - A workstation with terminal access
 - A registry to push/pull images
