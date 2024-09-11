@@ -8,7 +8,8 @@ This lab provides :
 - A workstation with terminal access
 - A registry to host images
 - A bootc VM
-- 60min of runtime
+
+Time limit : 60min
 
 ## Preparation
 
