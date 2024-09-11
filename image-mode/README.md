@@ -1,6 +1,7 @@
 # Image Mode Basics
 
 ## Instruqt Track
+
 Access the lab at [red.ht/im-rhel](red.ht/im-rhel)
 
 This lab provides:
@@ -13,6 +14,7 @@ This lab provides:
 Expect 10min of total prep
 
 ### Step 1
+
 Paste the following commands in *exercise 1*
 
 ```
@@ -44,7 +46,9 @@ virsh start bootc
 ```
 
 ### Step 2
+
 Advance to *exercise 2* to access the *VM Console* tab.
+
 Advance to *exercise 3* if you want to have both extra tabs : *Containerfile* and *VM Console*
 
 ## Demo
