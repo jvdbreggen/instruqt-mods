@@ -4,7 +4,7 @@
 
 Access the lab at [red.ht/im-rhel](red.ht/im-rhel)
 
-This lab provides:
+This lab provides :
 - A workstation with terminal access
 - A registry to host images
 - A bootc VM
@@ -54,8 +54,8 @@ virsh start bootc
 
 ### Step 3
 
-- Click **Check** to advance to *exercise 2* screen, you should now see the **VM Console** tab.
-- Click **Check** to advance to *exercise 3* screen, you should now see both the **Containerfile** and **VM Console** tabs.
+- Click **Check** then **Start** to advance to *exercise 2* screen, you should now see the **VM Console** tab.
+- Click **Check** then **Start** to advance to *exercise 3* screen, you should now see both the **Containerfile** and **VM Console** tabs.
 
 ## Demo
 
