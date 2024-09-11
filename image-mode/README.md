@@ -39,6 +39,7 @@ virsh start bootc
 ```
 
 ### Step 2
-Advance to *exercise 2* to access the *VM Console* tab
+Advance to *exercise 2* to access the *VM Console* tab.
+Advance to *exercise 3* if you want to have both extra tabs : *Containerfile* and *VM Console*
 
 ## Demo
