@@ -1,4 +1,4 @@
-#Image Mode Basics
+# Image Mode Basics
 
 ## Instruqt Track
 Access the lab at [red.ht/im-rhel](red.ht/im-rhel)
