@@ -17,7 +17,7 @@ Expect less than 10min of total prep
 
 ### Step 1
 
-Paste the following commands in *exercise 1*
+Paste the following commands in *exercise 1* screen
 
 ```
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc .
@@ -49,8 +49,15 @@ virsh start bootc
 
 ### Step 2
 
-Advance to *exercise 2* to access the *VM Console* tab.
+Advance to *exercise 2* screen to access the **VM Console** tab.
 
-Advance to *exercise 3* if you want to have both extra tabs : *Containerfile* and *VM Console*
+Advance to *exercise 3* screen to have both extra tabs : **Containerfile** and **VM Console**
 
 ## Demo
+
+Close the instruction pane on the right with the **>** icon on top.
+At this point you have a working bootc VM and you may modify the bootc image as you please.
+
+- Use the **Terminal** tab to build and push the image
+- Use the **Containerfile** tab to edit the image file
+- Use the **VM Console** tab for bootc commands
