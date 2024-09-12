@@ -95,6 +95,7 @@ podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc -f Con
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 ```
 Tab **VM Console** : Make a local change and show it 
+
 Credentials : core/redhat
 ```bash
 sudo -i
@@ -123,6 +124,7 @@ virsh reboot bootc
 ### 2. Bootc provides rollback capability
 
 Tab **VM Console** : Show the available rollback
+
 Credentials : core/redhat
 ```
 sudo -i
@@ -134,6 +136,7 @@ bootc rollback
 reboot
 ```
 Tab **VM Console** : Show that telnet is missing again
+
 Credentials : core/redhat
 ```
 rpm -q telnet
