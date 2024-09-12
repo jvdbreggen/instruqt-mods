@@ -94,7 +94,8 @@ Tab **Terminal** : Update the bootc image and push it to registry
 podman build -t rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc -f Containerfile
 podman push rhel.$INSTRUQT_PARTICIPANT_ID.instruqt.io:5000/test-bootc
 ```
-Tab **VM Console** : Make a local change and show it
+Tab **VM Console** : Make a local change and show it 
+Credentials : core/redhat
 ```bash
 sudo -i
 echo "☆ Bootc is awesome ! ☆" > /var/www/html/index.html
@@ -122,6 +123,7 @@ virsh reboot bootc
 ### 2. Bootc provides rollback capability
 
 Tab **VM Console** : Show the available rollback
+Credentials : core/redhat
 ```
 sudo -i
 bootc status
@@ -132,6 +134,7 @@ bootc rollback
 reboot
 ```
 Tab **VM Console** : Show that telnet is missing again
+Credentials : core/redhat
 ```
 rpm -q telnet
 curl localhost
