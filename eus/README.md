@@ -101,7 +101,7 @@ cat /etc/redhat-release
 
 </details>
 
-### 2. System Purpose helps you track usage in SCA mode
+### 2. System Purpose labels usage in SCA mode
 
 <details open>
         
