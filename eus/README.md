@@ -51,9 +51,52 @@ Here is an example demo scenario that showcases EUS and system purpose, but you 
 
 <details open>
         
-XXX        
+Before you start, display the current release (9.2)       
 ```bash
+cat /etc/redhat-release
+```
 
+Show that many updates are available but will update the system to the latest release
+```bash
+dnf list --updates
+```
+
+Display the current repos providing these updates and disable all of them        
+```bash
+subscription-manager repos --list-enabled
+subscription-manager repos --disable *
+```
+
+Find EUS repos available for this system     
+```bash
+subscription-manager repos | grep -i eus
+```
+
+Enable BaseOS and AppStream EUS repos       
+```bash
+subscription-manager repos --enable rhel-9-for-x86_64-baseos-eus-rpms --enable rhel-9-for-x86_64-appstream-eus-rpms
+```
+
+Show available releases        
+```bash
+subscription-manager release --list
+```
+
+Set the release at 9.3 and try to update (explain the error)         
+```bash
+subscription-manager release --set 9.3 
+dnf update
+```
+
+Set the release at 9.2 and show the lesser amount of updates with EUS. Accept all updates.         
+```bash
+subscription-manager release --set 9.2
+dnf update
+```
+
+Display the current release that is unchanged yet up-to-date (9.2)
+```bash
+cat /etc/redhat-release
 ```
 
 </details>
