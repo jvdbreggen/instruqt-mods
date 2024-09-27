@@ -131,5 +131,7 @@ Display the result and explain that it is used for reporting tools like the **Su
 subscription-manager syspurpose
 ```
 
-Tip : Follow-up with the Subscription Service demo ! [Instruqt Track](https://red.ht/subscriptions-lab) 
+### 3. Follow-up with the Subscription Service demo
+
+[Instruqt Track](https://red.ht/subscriptions-lab) 
 </details>
