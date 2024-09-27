@@ -58,4 +58,36 @@ XXX
 
 </details>
 
-### 2. System Purpose helps you track usage
+### 2. System Purpose helps you track usage in SCA mode
+
+<details open>
+        
+With SCA enabled, **subscription-manager status** returns puzzling output and this is normal      
+```bash
+subscription-manager status
+```
+
+Show System Purpose integration        
+```bash
+subscription-manager syspurpose --help
+```
+
+Show how to set system *Usage*        
+```bash
+subscription-manager syspurpose usage --list
+subscription-manager syspurpose usage --set Production
+```
+
+Show how to set system *SLA*        
+```bash
+subscription-manager syspurpose service-level --list
+subscription-manager syspurpose service-level --set Premium
+```
+
+Display the result and explain that it is used for reporting tools like the **Subscriptions Service** in Console.       
+```bash
+subscription-manager syspurpose
+```
+
+Tip : Follow-up with the Subscription Service demo ! (WIP)
+</details>
