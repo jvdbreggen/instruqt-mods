@@ -5,8 +5,8 @@
 Access the lab at [www.redhat.com/en/interactive-labs/introduction-to-extended-update-support](https://www.redhat.com/en/interactive-labs/introduction-to-extended-update-support)
 
 This lab provides :
-- A RHEL 9 server with terminal
-- Access to EUS repositories
+- A RHEL 9 server with terminal access
+- EUS repositories
 
 Time limit : 50min
 
