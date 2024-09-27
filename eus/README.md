@@ -14,7 +14,7 @@ Time limit : 50min
 
 Follow these instructions to limit update times and remove hyperscaler repos for a smooth demo.
 
-Expect less than 5min of total prep (mostly update time).
+Expect around 5min of total prep (mostly update time).
 
 <details open>
         
@@ -25,3 +25,37 @@ Expect less than 5min of total prep (mostly update time).
 
 ### Step 2
 
+- Paste the following commands all at once in **Terminal** tab
+```
+dnf config-manager --disable
+
+subscription-manager release --set 9.2
+dnf update -y
+
+subscription-manager release --set 9
+```
+
+It's ready !
+
+</details>
+
+## Demo
+
+Now close the instruction pane on the right with the **>** icon on top.
+
+At this point you have a RHEL 9.2 system that is up to date as of 9.2 release. The release is not set.
+
+Here is an example demo scenario that showcases EUS and system purpose, but you can design your own.
+
+### 1. Extended Update Support provides fixes for a set minor release
+
+<details open>
+        
+XXX        
+```bash
+
+```
+
+</details>
+
+### 2. System Purpose helps you track usage
