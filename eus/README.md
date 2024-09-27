@@ -20,7 +20,7 @@ Expect around 5min of total prep (mostly update time).
         
 ### Step 1
 
-- Click **Launch** on the bottom right, expect 3min of provisioning.
+- Click **Launch** on the bottom right, expect 2min of provisioning.
 - Click **Start** on the bottom right when it appears.
 
 ### Step 2
