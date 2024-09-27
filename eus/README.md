@@ -61,7 +61,18 @@ Show that many updates are available but will update the system to the latest re
 dnf list --updates
 ```
 
-Display the current repos providing these updates and disable all of them        
+Show available releases        
+```bash
+subscription-manager release --list
+```
+
+Set the release at 9.2 and show that no more updates are available.         
+```bash
+subscription-manager release --set 9.2
+dnf update
+```
+
+Display the current repos providing updates and disable all of them        
 ```bash
 subscription-manager repos --list-enabled
 subscription-manager repos --disable *
@@ -77,20 +88,8 @@ Enable BaseOS and AppStream EUS repos
 subscription-manager repos --enable rhel-9-for-x86_64-baseos-eus-rpms --enable rhel-9-for-x86_64-appstream-eus-rpms
 ```
 
-Show available releases        
+Show the updates coming from EUS repos. Accept all updates         
 ```bash
-subscription-manager release --list
-```
-
-Set the release at 9.3 and try to update (explain the error)         
-```bash
-subscription-manager release --set 9.3 
-dnf update
-```
-
-Set the release at 9.2 and show the lesser amount of updates with EUS. Accept all updates.         
-```bash
-subscription-manager release --set 9.2
 dnf update
 ```
 
