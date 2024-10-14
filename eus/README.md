@@ -28,6 +28,7 @@ Expect around 5min of total prep (mostly update time).
 - Paste the following commands all at once in **Terminal** tab
 ```
 dnf config-manager --disable google*
+echo max_parallel_downloads=20 >> /etc/dnf/dnf.conf
 
 subscription-manager release --set 9.2
 dnf update -y
