@@ -132,6 +132,12 @@ subscription-manager syspurpose service-level --list
 subscription-manager syspurpose service-level --set Premium
 ```
 
+Show how to set system *Role*        
+```bash
+subscription-manager syspurpose role --list
+subscription-manager syspurpose role --set "subscription-manager syspurpose role --list"
+```
+
 Display the result and explain that it is used for reporting tools like the **Subscriptions Service** in Console.       
 ```bash
 subscription-manager syspurpose
