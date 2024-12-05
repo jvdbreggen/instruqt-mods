@@ -30,7 +30,7 @@ Expect around 5min of total prep (mostly update time).
 dnf config-manager --disable google*
 echo max_parallel_downloads=20 >> /etc/dnf/dnf.conf
 
-subscription-manager release --set 9.2
+subscription-manager release --set 9.4
 dnf update -y
 
 subscription-manager release --set 9
@@ -44,7 +44,7 @@ It's ready !
 
 Now close the instruction pane on the right with the **>** icon on top.
 
-At this point you have a RHEL 9.2 system that is up to date as of 9.2 release. The release is not set.
+At this point you have a RHEL 9.4 system that is up to date as of 9.4 release. The release is not set.
 
 Here is an example demo scenario that showcases EUS and system purpose, but you can design your own.
 
@@ -52,7 +52,7 @@ Here is an example demo scenario that showcases EUS and system purpose, but you 
 
 <details open>
         
-Before you start, display the current release (9.2)       
+Before you start, display the current release (9.4)       
 ```bash
 cat /etc/redhat-release
 ```
@@ -72,9 +72,9 @@ Show available releases
 subscription-manager release --list
 ```
 
-Set the release at 9.2 and show that no more updates are available.         
+Set the release at 9.4 and show that no more updates are available.         
 ```bash
-subscription-manager release --set 9.2
+subscription-manager release --set 9.4
 dnf update
 ```
 
@@ -99,7 +99,7 @@ Show the updates coming from EUS repos. Accept all updates
 dnf update
 ```
 
-Display the current release that is unchanged yet up-to-date (9.2)
+Display the current release that is unchanged yet up-to-date (9.4)
 ```bash
 cat /etc/redhat-release
 ```
