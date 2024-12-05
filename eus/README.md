@@ -62,6 +62,11 @@ Show that many updates are available but will update the system to the latest re
 dnf list --updates
 ```
 
+Show current release       
+```bash
+subscription-manager release --show
+```
+
 Show available releases        
 ```bash
 subscription-manager release --list
